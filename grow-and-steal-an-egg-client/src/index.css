@@ -1,0 +1,7 @@
+html, body, #root { margin: 0; height: 100%; overflow: hidden; background: #0d1a26; /* the loading page colour: no flash of another colour while starting */ }
+.app, .viewport { position: absolute; inset: 0; }
+.viewport canvas { display: block; }
+
+/* the storm's dark tint and the lightning flash over the 3D view (never over the HUD, never clickable) */
+.storm-tint { position: absolute; inset: 0; pointer-events: none; z-index: 1; }
+.viewport { z-index: 0; } /* keeps the storm tint under the HUD */
